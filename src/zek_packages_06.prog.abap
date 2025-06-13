@@ -16,7 +16,7 @@ TYPES: BEGIN OF gty_structure,
          e_mail  TYPE string,
        END OF gty_structure.
 
-
+"Structure
 DATA: gs_structure TYPE gty_structure,
       gt_table     TYPE TABLE OF gty_structure.
 

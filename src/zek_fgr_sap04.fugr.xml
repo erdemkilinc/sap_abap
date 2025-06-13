@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Fonksiyon Grubu Örneği</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZEK_FGR_SAP04TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZEK_FGR_SAP04</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZEK_FM_SAP04_01</FUNCNAME>
+     <SHORT_TEXT>Fonksiyon Örneği</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_NUMBER_1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_NUMBER_2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_NUMBER_1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Natural number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_NUMBER_2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Natural number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Natural number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZEK_FM_SAP04_02</FUNCNAME>
+     <SHORT_TEXT>Örnek-2</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_TEXT_1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR40</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TEXT_2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR40</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_UPPERCASE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>XFELD</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_TEXT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR40</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_TEXT_1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character field of length 40</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TEXT_2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character field of length 40</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_UPPERCASE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Checkbox</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_TEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character field of length 40</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZEK_FM_SAP04_03</FUNCNAME>
+     <SHORT_TEXT>Ornek-3</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DEP_TIME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TIMS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ARR_TIME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TIMS</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CS_SPFLI</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPFLI</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_FLTIME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>S_FLTIME</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_FLTIME_CHANGED</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>XFELD</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DEP_TIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field of type TIMS</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ARR_TIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field of type TIMS</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_FLTIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flight time</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_FLTIME_CHANGED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Checkbox</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CS_SPFLI</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flight schedule</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZEK_FM_SAP04_04</FUNCNAME>
+     <SHORT_TEXT>Ornek-4</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_TEXT_1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TEXT_2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ZERO_DIVISION</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_TEXT_1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Natural number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TEXT_2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Natural number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Natural number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ZERO_DIVISION</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Bölen sıfır olamaz</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
